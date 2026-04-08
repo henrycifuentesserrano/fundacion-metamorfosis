@@ -205,3 +205,34 @@ body {
 .btn-secondary:hover {
   background: var(--verde-oscuro);
 }
+
+/* ===== STATS ===== */
+#stats {
+  background: var(--azul);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 32px;
+  gap: 1px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat-num {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--blanco);
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
