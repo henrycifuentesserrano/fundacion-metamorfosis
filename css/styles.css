@@ -236,3 +236,88 @@ body {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.75);
 }
+
+/* ===== PILARES ===== */
+#pilares {
+  background: var(--blanco);
+  padding: 64px 32px;
+}
+
+.pilares-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-tag {
+  display: inline-block;
+  background: #eaf3de;
+  color: #27500a;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  letter-spacing: 0.6px;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--texto);
+  margin-bottom: 12px;
+}
+
+.section-header p {
+  font-size: 15px;
+  color: var(--gris-texto);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.pilares-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.pilar {
+  background: var(--blanco);
+  border: 1px solid #e0e0e0;
+  border-top: 3px solid var(--azul);
+  border-radius: 10px;
+  padding: 24px 16px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pilar:nth-child(even) {
+  border-top-color: var(--verde);
+}
+
+.pilar:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.pilar-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.pilar h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--texto);
+  margin-bottom: 8px;
+}
+
+.pilar p {
+  font-size: 12px;
+  color: var(--gris-texto);
+  line-height: 1.6;
+}
