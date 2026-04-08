@@ -321,3 +321,49 @@ body {
   color: var(--gris-texto);
   line-height: 1.6;
 }
+/* ===== IMPACTO ===== */
+#impacto {
+  background: var(--gris-claro);
+  padding: 64px 32px;
+}
+
+.impacto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.impacto-text h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--texto);
+  margin: 12px 0 16px;
+}
+
+.impacto-text p {
+  font-size: 14px;
+  color: var(--gris-texto);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.03);
+}
