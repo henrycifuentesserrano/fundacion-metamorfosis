@@ -1146,3 +1146,68 @@ section, footer {
     font-size: var(--s1);
   }
 }
+/* ===== BOTÓN FLOTANTE WHATSAPP ===== */
+.btn-flotante-wapp {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  z-index: 9999;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-flotante-wapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+}
+
+/* ===== ANIMACIONES SCROLL ===== */
+#historia,
+#pilares,
+#impacto,
+#donaciones,
+#voluntariado,
+#cta {
+  opacity: 1;
+  transform: none;
+}
+
+.pilar,
+.mision-card,
+.donacion-card,
+.timeline-item,
+.galeria-grid img {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.pilar:nth-child(1) { transition-delay: 0.1s; }
+.pilar:nth-child(2) { transition-delay: 0.2s; }
+.pilar:nth-child(3) { transition-delay: 0.3s; }
+.pilar:nth-child(4) { transition-delay: 0.4s; }
+.pilar:nth-child(5) { transition-delay: 0.5s; }
+
+.mision-card:nth-child(1) { transition-delay: 0.1s; }
+.mision-card:nth-child(2) { transition-delay: 0.2s; }
+.mision-card:nth-child(3) { transition-delay: 0.3s; }
+
+.donacion-card:nth-child(1) { transition-delay: 0.1s; }
+.donacion-card:nth-child(2) { transition-delay: 0.2s; }
+.donacion-card:nth-child(3) { transition-delay: 0.3s; }
+
+.timeline-item:nth-child(1) { transition-delay: 0.1s; }
+.timeline-item:nth-child(2) { transition-delay: 0.2s; }
+.timeline-item:nth-child(3) { transition-delay: 0.3s; }
+
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
