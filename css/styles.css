@@ -1373,3 +1373,6 @@ section, footer {
   color: var(--azul);
   font-weight: 600;
 }
+#historia {
+  padding-top: var(--s3);
+}

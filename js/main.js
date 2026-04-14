@@ -85,6 +85,21 @@ function enviarFormulario(event) {
 
   const mensaje = `Hola! Me gustaría ser voluntario de la Fundación Metamorfosis Chicoral.%0A%0A*Nombre:* ${nombre}%0A*Correo:* ${correo}%0A*Teléfono:* ${telefono}%0A*Área de interés:* ${area}`;
 
-  window.open(`https://wa.me/573184814463?text=${mensaje}`, '_blank');
+  window.open(`https://wa.me/${CONFIG.whatsapp}?text=${mensaje}`, '_blank');
   form.reset();
 }
+
+// ===== CONFIGURACIÓN GLOBAL =====
+const CONFIG = {
+  whatsapp: '573004022304'
+};
+
+// ===== ACTUALIZAR ENLACES WHATSAPP =====
+document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+  const texto = link.href.split('?text=')[1];
+  if (texto) {
+    link.href = `https://wa.me/${CONFIG.whatsapp}?text=${texto}`;
+  } else {
+    link.href = `https://wa.me/${CONFIG.whatsapp}`;
+  }
+});
