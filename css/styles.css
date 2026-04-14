@@ -1211,3 +1211,165 @@ section, footer {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
+
+/* ===== EQUIPO ===== */
+#equipo {
+  background: var(--blanco);
+  padding: var(--s4) var(--s3);
+}
+
+.equipo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.equipo-bloque {
+  margin-bottom: var(--s4);
+}
+
+.equipo-titulo {
+  font-size: var(--s2);
+  font-weight: 700;
+  color: var(--azul);
+  margin-bottom: var(--s2);
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--azul);
+  display: inline-block;
+}
+
+.equipo-grid {
+  display: grid;
+  gap: var(--s2);
+}
+
+.junta-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.miembros-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.miembro-card {
+  background: var(--gris-claro);
+  border-radius: 12px;
+  padding: var(--s2);
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.miembro-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.miembro-card.junta {
+  background: var(--blanco);
+  border: 2px solid var(--azul);
+}
+
+.miembro-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--azul);
+  color: var(--blanco);
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--s1);
+}
+
+.miembro-card.junta .miembro-avatar {
+  width: 80px;
+  height: 80px;
+  font-size: 22px;
+  background: var(--azul-oscuro);
+}
+
+.miembro-nombre {
+  font-size: var(--s1);
+  font-weight: 600;
+  color: var(--texto);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.miembro-cargo {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--azul);
+  margin-bottom: 4px;
+}
+
+.miembro-profesion {
+  font-size: 13px;
+  color: var(--gris-texto);
+}
+
+@media (max-width: 1024px) {
+  .miembros-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .junta-grid {
+    grid-template-columns: 1fr;
+  }
+  .miembros-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .miembros-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== PAGE HERO ===== */
+.page-hero {
+  position: relative;
+  height: 300px;
+  background-image: url('img/chicoral.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 58, 99, 0.72);
+}
+
+.page-hero-content {
+  position: relative;
+  text-align: center;
+  color: var(--blanco);
+  padding: 0 var(--s3);
+}
+
+.page-hero-content h1 {
+  font-size: var(--s3);
+  font-weight: 700;
+  margin: var(--s1) 0;
+  line-height: 1.2;
+  color: var(--blanco);
+}
+
+.page-hero-content p {
+  font-size: var(--s2);
+  opacity: 0.85;
+  color: var(--blanco);
+}
+
+.nav-links a.active {
+  color: var(--azul);
+  font-weight: 600;
+}
