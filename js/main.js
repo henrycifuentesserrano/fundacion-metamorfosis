@@ -91,7 +91,9 @@ function enviarFormulario(event) {
 
 // ===== CONFIGURACIÓN GLOBAL =====
 const CONFIG = {
-  whatsapp: '573004022304'
+  whatsapp: '573004022304',
+  cuenta_bancolombia: '123xxxx',
+  tipo_cuenta: 'Cuenta de Ahorros'
 };
 
 // ===== ACTUALIZAR ENLACES WHATSAPP =====
@@ -103,3 +105,18 @@ document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
     link.href = `https://wa.me/${CONFIG.whatsapp}`;
   }
 });
+
+// ===== COPIAR CUENTA BANCOLOMBIA =====
+function copiarCuenta() {
+  navigator.clipboard.writeText(CONFIG.cuenta_bancolombia).then(() => {
+    const btn = document.querySelector('.btn-form');
+    btn.textContent = '¡Copiado!';
+    setTimeout(() => {
+      btn.textContent = 'Copiar número de cuenta';
+    }, 2000);
+  });
+}
+
+// Actualizar número de cuenta en el HTML
+const cuentaEl = document.getElementById('cuenta-bancolombia');
+if (cuentaEl) cuentaEl.textContent = CONFIG.cuenta_bancolombia;
