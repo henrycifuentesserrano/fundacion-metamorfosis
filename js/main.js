@@ -92,8 +92,10 @@ function enviarFormulario(event) {
 // ===== CONFIGURACIÓN GLOBAL =====
 const CONFIG = {
   whatsapp: '573004022304',
-  cuenta_bancolombia: '123xxxx',
-  tipo_cuenta: 'Cuenta de Ahorros'
+  cuenta_bancolombia: '41100001446',
+  tipo_cuenta: 'Cuenta de Ahorros',
+  transferiya_link: '', // aquí va el link cuando lo tengas
+  bancolombia_boton: '' // aquí va el botón cuando lo tengas
 };
 
 // ===== ACTUALIZAR ENLACES WHATSAPP =====

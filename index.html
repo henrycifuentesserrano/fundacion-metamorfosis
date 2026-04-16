@@ -64,7 +64,7 @@
       <div class="hero-content">
         <span class="hero-tag">Chicoral · Tolima · Colombia</span>
         <h1>Transformando vidas,<br>construyendo comunidad</h1>
-        <p>Somos una fundación sin ánimo de lucro comprometida con la educación, el arte, la ciencia y el bienestar social de Chicoral y la región.</p>
+        <p>Somos una fundación sin ánimo de lucro comprometida con la educación, el arte, la ciencia y el bienestar social de la región.</p>
         <div class="hero-btns">
           <a href="historia.html" class="btn-primary">Nuestra historia</a>
           <a href="#voluntariado" class="btn-secondary">Sé voluntario</a>
@@ -105,15 +105,15 @@
     <div class="historia-mision">
       <div class="mision-card">
         <h3>Misión</h3>
-        <p>Fomentar la integración y el desarrollo de colectivos en riesgo de exclusión social, apoyando la educación como herramienta de transformación y facilitando la incorporación de niños, jóvenes y familias al mundo social, cultural y productivo de Chicoral y la región.</p>
+        <p>Fortalecer la inclusión social y el desarrollo de comunidades en riesgo de exclusión, mediante procesos educativos que impulsen la participación activa de niños, jóvenes y familias en los entornos social, cultural y productivo de la región.</p>
       </div>
       <div class="mision-card">
         <h3>Visión</h3>
-        <p>Ser para 2030 la fundación de referencia en el Tolima en materia de desarrollo social, educativo y cultural, reconocida por transformar vidas a través del arte, la ciencia, el deporte y la comunidad, contribuyendo a que Chicoral crezca.</p>
+        <p>Para 2030, ser una organización líder en el Tolima en procesos de desarrollo social, educativo y cultural, reconocida por su impacto sostenible y su capacidad de transformar comunidades mediante el arte, la ciencia y el deporte.</p>
       </div>
       <div class="mision-card">
         <h3>Nuestro compromiso</h3>
-        <p>Creemos en la inclusión, el respeto y la transformación social. Nos comprometemos a que el arte, la ciencia, el deporte, la salud y la comunidad sean derechos de todos en Chicoral y la región — no privilegios de pocos.</p>
+        <p>Promovemos la inclusión, el respeto y la transformación social como pilares de nuestro trabajo. Nos comprometemos a impulsar el acceso equitativo al arte, la ciencia, el deporte, la salud y la participación comunitaria en la región.</p>
       </div>
     </div>
 
@@ -156,7 +156,6 @@
           <h2>Cuatro años transformando Chicoral</h2>
           <p>Desde nuestra fundación hemos trabajado sin descanso por el bienestar de la comunidad chicoraluna, apostando por la educación y el desarrollo social como motores de cambio.</p>
           <p>Ferias empresariales, talleres de arte, talleres de ciencia, jornadas lúdicas, festivales de cometas, eventos deportivos — cada actividad deja una huella en nuestra comunidad.</p>
-          <a href="#voluntariado" class="btn-secondary">Apoya nuestra causa</a>
         </div>
         <div class="impacto-galeria">
           <div class="galeria-grid">
@@ -175,11 +174,11 @@
         <div class="section-header">
           <span class="section-tag">Apoya la fundación</span>
           <h2>Tu donación transforma vidas</h2>
-          <p>Cada aporte nos permite seguir trabajando por los niños y jóvenes de Chicoral.</p>
+          <p>Cada aporte nos permite seguir trabajando por los niños y jóvenes de nuestra comunidad.</p>
         </div>
-        <div class="donaciones-grid" style="grid-template-columns: 1fr; max-width: 400px; margin: var(--s3) auto 0;">
+        <div class="donaciones-grid" style="grid-template-columns: 1fr; max-width: 360px; margin: var(--s1) auto 0;">
           <div class="donacion-card">
-            <div class="donacion-logo" style="background:#FFD100;">
+            <div class="donacion-logo" style="background:#fefefe;">
               <img src="img/bancolombia.png" alt="Bancolombia" style="width:40px;height:40px;object-fit:contain;" onerror="this.parentElement.textContent='B'" />
             </div>
             <h3>Bancolombia</h3>
@@ -187,7 +186,12 @@
             <p class="donacion-nombre">Cuenta de Ahorros</p>
             <p class="donacion-nombre">Fundación Metamorfosis Chicoral</p>
             <p class="donacion-nombre">NIT: 901.487.829-7</p>
-            <button onclick="copiarCuenta()" class="btn-form" style="margin-top:var(--s1);">Copiar número de cuenta</button>
+            <button onclick="copiarCuenta()" class="btn-form" style="margin-top:var(--s1);">
+              Copiar número de cuenta
+            </button>
+            <button id="btn-pago-online" class="btn-form" style="margin-top:8px; background:var(--azul); opacity:0.5; cursor:not-allowed;" disabled>
+              Pago en línea — Próximamente
+            </button>
           </div>
         </div>
       </div>
@@ -198,17 +202,17 @@
       <div class="voluntariado-container">
         <div class="section-header">
           <span class="section-tag">Sé voluntario</span>
-          <h2>Sé parte del cambio en Chicoral</h2>
+          <h2>Sé parte del cambio</h2>
           <p>Tu tiempo y talento son el motor que nos impulsa. Únete a nuestra comunidad de voluntarios.</p>
         </div>
         <div class="voluntariado-grid">
           <div class="voluntariado-info">
             <h3>¿Por qué ser voluntario?</h3>
             <ul class="voluntariado-lista">
-              <li>Impacta directamente la vida de niños y jóvenes de Chicoral</li>
+              <li>Impacta directamente la vida de niños y jóvenes</li>
               <li>Desarrolla habilidades de liderazgo y trabajo en equipo</li>
               <li>Forma parte de una comunidad comprometida con el cambio social</li>
-              <li>Gana experiencia en proyectos de impacto social real</li>
+              <li>Adquiere experiencia en proyectos de impacto social real</li>
             </ul>
           </div>
           <form class="voluntariado-form" onsubmit="enviarFormulario(event)">
@@ -283,6 +287,20 @@
           </ul>
         </div>
       </div>
+
+      <!-- Mapa -->
+      <div class="footer-mapa">
+        <iframe
+          src="https://maps.google.com/maps?q=4.213477,-74.979428&z=17&output=embed"
+          width="100%"
+          height="300"
+          style="border:0; display:block;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
       <div class="footer-bottom">
         © 2025 Fundación Metamorfosis Chicoral · Todos los derechos reservados
       </div>

@@ -1376,3 +1376,62 @@ section, footer {
 #historia {
   padding-top: var(--s3);
 }
+
+/* ===== FOTOS EQUIPO ===== */
+.miembro-foto-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto var(--s1);
+  position: relative;
+}
+
+.miembro-foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid var(--azul);
+}
+
+.miembro-card.junta .miembro-foto {
+  width: 96px;
+  height: 96px;
+  border-width: 3px;
+}
+
+.miembro-card.junta .miembro-foto-container {
+  width: 96px;
+  height: 96px;
+}
+
+.miembro-frase {
+  font-size: 13px;
+  color: var(--gris-texto);
+  font-style: italic;
+  margin-top: var(--s1);
+  line-height: 1.5;
+  border-top: 1px solid #e0e0e0;
+  padding-top: var(--s1);
+}
+
+/* ===== MAPA FOOTER ===== */
+.footer-mapa {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+}
+
+.footer-mapa iframe {
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.footer-mapa iframe:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .footer-mapa iframe {
+    height: 220px;
+  }
+}
